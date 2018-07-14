@@ -1,0 +1,121 @@
+﻿<Window x:Class="brownshouse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:brownshouse"
+        Background="#e5e5e5"
+        mc:Ignorable="d"
+        Name="mainWindow"
+        Title="DIAP" Height="300" Width="800" MinHeight="300" MinWidth="800" MaxHeight="300" MaxWidth="800">
+    <Window.Resources>
+        <ResourceDictionary Source="Resources.xaml"/>
+    </Window.Resources>
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem FontSize="13" Height="30" Header="Project Info">
+                <MenuItem Header="Add Unit"
+                          Command="{Binding AddUnitCommand}"/>
+                <MenuItem Header="Add Discipline"
+                          Command="{Binding AddDisciplineCommand}"/>
+                <MenuItem Header="Add System"
+                          Command="{Binding AddSystemCommand}"/>
+                <MenuItem Header="Add Subsystem"
+                          Command="{Binding AddSubsystemCommand}"/>
+            </MenuItem>
+            <MenuItem FontSize="13" Height="30" Header="ITP Info">
+                <MenuItem Header="Add Acceptance result"
+                          Command="{Binding AddAcceptanceCommand}"/>
+                <MenuItem Header="Add Inspection Role"
+                          Command="{Binding AddInspectionRoleCommand}"/>
+                <MenuItem Header="Add Work"
+                          Command="{Binding AddWorkCommand}"/>
+                <MenuItem Header="Add Activity"
+                          Command="{Binding AddActivityCommand}"/>
+                <MenuItem Header="Add Subactivity"
+                          Command="{Binding AddSubactivityCommand}"/>
+                <MenuItem Header="Add Form"
+                          Command="{Binding AddFormCommand}"/>
+                <MenuItem Header="Add ITP"
+                          Command="{Binding AddITPCommand}"/>
+            </MenuItem>
+            <MenuItem FontSize="13" Height="30" Header="User Info">
+                <MenuItem Header="Add User"
+                          Command="{Binding AddEmployeeCommand}"/>
+                <MenuItem Header="Program Mail"
+                          Command="{Binding ProgramMailCommand}"/>
+                <MenuItem Header="Change Password"
+                          Command="{Binding ChangePasswordCommand}"/>
+            </MenuItem>
+            <MenuItem FontSize="13" Height="30" Header="Daily activities">
+                <MenuItem Header="New RFI"
+                          Command="{Binding AddRFICommand}"/>
+                <MenuItem Header="Close RFI"
+                          Command="{Binding RequestsCommand}"/>
+                <MenuItem Header="New Punch"
+                          Command="{Binding AddPunchCommand}"/>
+                <MenuItem Header="Close Punch"
+                          Command="{Binding PunchClosingCommand}"/>
+            </MenuItem>
+            <MenuItem FontSize="13" Height="30" Header="Log out" Command="{Binding LogOutCommand}"/>
+        </Menu>
+        <Button Name="btnDown" DockPanel.Dock="Bottom" Height="40" Width="40" Grid.Row="1" Margin="0 0 15 15" VerticalAlignment="Bottom" HorizontalAlignment="Right" Padding="0" Click="Button_Click_Down">
+            <Image Height="30" Width="30" Source="images/double-down.png"/>
+        </Button>
+        <Button Name="btnUp" Visibility="Collapsed" DockPanel.Dock="Bottom" Height="40" Width="40" Grid.Row="1" Margin="0 0 15 15" VerticalAlignment="Bottom" HorizontalAlignment="Right" Padding="0" Click="Button_Click_Up">
+            <Image Height="30" Width="30" Source="images/double-up.png"/>
+        </Button>
+
+        <StackPanel Margin="0 30" Orientation="Vertical">
+            <Label Content="Daily activities:" Margin="10 0 0 15"/>
+            <UniformGrid Columns="3">
+                <Button Width="150" Content="Edit RFI" Height="30" Command="{Binding RequestsCommand}"/>
+                <Button Width="150" Content="Edit Punch" Height="30" Command="{Binding PunchClosingCommand}"/>
+                <Button Width="150" Content="Edit ITP" Height="30" Command="{Binding AddITPCommand}"/>
+            </UniformGrid>
+
+            <StackPanel Name="stackAdditional" Orientation="Vertical" Margin="0 120 0 0">
+                <Label Content="Project information:" Margin="10 0 0 15"/>
+                <UniformGrid VerticalAlignment="Center" Columns="4">
+                    <Button Width="150" Content="Add Unit" Height="30" Command="{Binding AddUnitCommand}"/>
+                    <Button Width="150"  Content="Add Discipline" Height="30" Command="{Binding AddDisciplineCommand}"/>
+                    <Button Width="150" Content="Add System" Height="30" Command="{Binding AddSystemCommand}"/>
+                    <Button Width="150" Content="Add Subsystem" Height="30" Command="{Binding AddSubsystemCommand}"/>
+                </UniformGrid>
+
+                <Label Content="ITP information:" Margin="10 35 0 15"/>
+                <UniformGrid Columns="4">
+                    <Button Width="150" Content="Add Accept result" Height="30" Command="{Binding AddAcceptanceCommand}"/>
+                    <Button Width="150" Content="Add Work" Height="30" Command="{Binding AddWorkCommand}"/>
+                    <Button Width="150" Content="Add Activity" Height="30" Command="{Binding AddActivityCommand}"/>
+                    <Button Width="150" Content="Add Subactivity" Height="30" Command="{Binding AddSubactivityCommand}"/>
+                </UniformGrid>
+                <Grid Margin="0 10 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Width="150" Content="Add Inspect Role" Height="30" Command="{Binding AddInspectionRoleCommand}"/>
+                    <Button Width="150" Content="Add Form" Height="30" Command="{Binding AddFormCommand}"/>
+                    <Button Width="150" Grid.Column="3" Content="Add ITP" Height="30" Command="{Binding AddITPCommand}"/>
+                </Grid>
+
+                <Label Content="User information:" Margin="10 35 0 15"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Width="150" Grid.Column="0" Content="Add Employee" Height="30" Command="{Binding AddEmployeeCommand}"/>
+                    <Button Width="150" Grid.Column="1" Content="Program Mail" Height="30" Command="{Binding ProgramMailCommand}"/>
+                    <Button Width="150" Grid.Column="3" Content="Change Password" Height="30" Command="{Binding ChangePasswordCommand}"/>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+    </DockPanel>
+</Window>

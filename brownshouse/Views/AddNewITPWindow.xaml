@@ -1,0 +1,61 @@
+﻿<Window x:Class="brownshouse.Views.AddNewITPWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:brownshouse.Views"
+        mc:Ignorable="d"
+        Name="window"
+        Background="#e5e5e5"
+        Title="DIAP - New ITP" Height="475" Width="1200" MinHeight="475" MinWidth="1200" MaxHeight="475" MaxWidth="1200">
+
+    <Window.Resources>
+        <ResourceDictionary Source="Dictionary.xaml"/>
+    </Window.Resources>
+
+
+    <StackPanel Orientation="Vertical" Margin="15">
+        <StackPanel Orientation="Horizontal">
+            <Label Width="120" Content="Discipline:"/>
+            <ComboBox Width="200" ItemsSource="{Binding DisciplineList}" IsEnabled="{Binding IsActive, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedDiscipline, Mode=OneWayToSource}" SelectionChanged="ComboBox_SelectionChanged"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <Label Content="Work:" Width="120"/>
+            <ComboBox Width="200" ItemsSource="{Binding WorksList}" IsEnabled="{Binding IsActive, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"  DisplayMemberPath="Title" SelectedItem="{Binding SelectedWork, Mode=OneWayToSource}" SelectionChanged="ComboBox_SelectionChanged_1"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <Label Content="Activity:" Width="120"/>
+            <ComboBox Width="200" ItemsSource="{Binding ActivitiesList}" IsEnabled="{Binding IsActive, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"  DisplayMemberPath="Title" SelectedItem="{Binding SelectedActivity, Mode=OneWayToSource}" SelectionChanged="ComboBox_SelectionChanged_2"/>
+        </StackPanel>
+        <Label Content="Inspection Test Plans" Margin="0 15 0 0"/>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Phase" FontWeight="Normal" Margin="10 0 0 0"/>
+            <Label Content="Subactivity" Margin="20 0 0 0" FontWeight="Normal"/>
+            <Label Content="*Form" Margin="380 0 0 0" FontWeight="Normal"/>
+            <Label Content="*Subcontractor" Margin="60 0 0 0" FontWeight="Normal"/>
+            <Label Content="*Contractor" Margin="15 0 0 0" FontWeight="Normal"/>
+            <Label Content="*Owner" Margin="35 0 0 0" FontWeight="Normal"/>
+            <Label Content="*Third party" Margin="55 0 0 0" FontWeight="Normal"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <ListBox HorizontalAlignment="Left" Width="1100" Height="200" ItemsSource="{Binding ITPsList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Width="50" Text="{Binding Subactivity.Number}" IsReadOnly="True" Margin="0 0 5 0"/>
+                            <TextBox Width="450" Text="{Binding Subactivity.Title}" IsReadOnly="True" Margin="0 0 5 0"/>
+                            <ComboBox Padding="5 7" Width="100" ItemsSource="{Binding Source={x:Reference window}, Path=DataContext.FormsList}" DisplayMemberPath="Title" SelectedItem="{Binding Form, Mode=OneWayToSource}" Margin="0 0 5 0"/>
+                            <ComboBox Padding="5 7" Width="100" ItemsSource="{Binding Source={x:Reference window}, Path=DataContext.InspectionRolesList}" DisplayMemberPath="Code" SelectedItem="{Binding SubcontractorRole, Mode=OneWayToSource}" Margin="0 0 5 0"/>
+                            <ComboBox Padding="5 7" Width="100" ItemsSource="{Binding Source={x:Reference window}, Path=DataContext.InspectionRolesList}" DisplayMemberPath="Code" SelectedItem="{Binding ContractorRole, Mode=OneWayToSource}" Margin="0 0 5 0"/>
+                            <ComboBox Padding="5 7" Width="100" ItemsSource="{Binding Source={x:Reference window}, Path=DataContext.InspectionRolesList}" DisplayMemberPath="Code" SelectedItem="{Binding OwnerRole, Mode=OneWayToSource}" Margin="0 0 5 0"/>
+                            <ComboBox Padding="5 7" Width="100" ItemsSource="{Binding Source={x:Reference window}, Path=DataContext.InspectionRolesList}" DisplayMemberPath="Code" SelectedItem="{Binding ThirdPartRole, Mode=OneWayToSource}" Margin="0 0 5 0"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+
+        <Button FontWeight="DemiBold" Height="30" Width="100" HorizontalAlignment="Left" Margin="0 5 0 0" Content="OK" Command="{Binding OkCommand}"/>
+
+    </StackPanel>
+</Window>

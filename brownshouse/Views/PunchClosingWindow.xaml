@@ -1,0 +1,143 @@
+﻿<Window x:Class="brownshouse.Views.PunchClosingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:brownshouse.Views"
+        mc:Ignorable="d"
+        Background="#e5e5e5"
+        WindowState="Maximized"
+        Title="DIAP - Close Punch" Height="450" Width="800">
+
+    <Window.Resources>
+        <ResourceDictionary Source="Dictionary.xaml"/>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Vertical">
+                
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="150" Content="AllPunches:"/>
+                    <CheckBox IsChecked="{Binding IsAll, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked" IsEnabled="{Binding IsActive, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="150" Content="Discipline:"/>
+                    <ComboBox Width="100" ItemsSource="{Binding DisciplineList}" IsEnabled="{Binding IsActive, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedDiscipline, Mode=OneWayToSource}" SelectionChanged="ComboBox_SelectionChanged"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="150" Content="Unit:"/>
+                    <ComboBox Width="100" ItemsSource="{Binding UnitsList}" IsEnabled="{Binding IsActive, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedUnit, Mode=OneWayToSource}" SelectionChanged="ComboBox_SelectionChanged_1"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="150" Content="System:"/>
+                    <ComboBox Width="100" ItemsSource="{Binding SystemsList}" IsEnabled="{Binding IsActive, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedSystem, Mode=OneWayToSource}" SelectionChanged="ComboBox_SelectionChanged_2"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="150" Content="Subsystem:"/>
+                    <ComboBox Width="100" ItemsSource="{Binding SubsystemsList}" IsEnabled="{Binding IsActive, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedSubsystem, Mode=OneWayToSource}" SelectionChanged="ComboBox_SelectionChanged_3"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="120" Content="Date opened:"/>
+                    <Label Content="{Binding SelectedOpenedPunch.DateOpened, Mode=OneWay}"/>
+                </StackPanel>
+                <Label Content="Punches:"/>
+                <Label Content="Opened"/>
+
+
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Column="1">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="From:"/>
+                    <DatePicker Width="150" SelectedDate="{Binding FromDate, Mode=OneWayToSource}"/>
+                    <Label Content="To:"/>
+                    <DatePicker Width="150" SelectedDate="{Binding ToDate, Mode=OneWayToSource}"/>
+                    <Button Content="Show" Command="{Binding ShowReportCommand}"/>
+                </StackPanel>
+                <StackPanel Margin="160 40 0 0" Orientation="Horizontal">
+                    <Label Width="30" Content="A"/>
+                    <Label Width="30" Content="B"/>
+                    <Label Width="30" Content="C"/>
+                    <Label Content="Total"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="120" Content="Opened punches:"/>
+                    <Label Margin="40 0 0 0" Width="30" Content="{Binding OpenedPunchesReport.PunchACount, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Label Width="30" Content="{Binding OpenedPunchesReport.PunchBCount, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Label Width="40" Content="{Binding OpenedPunchesReport.PunchCCount, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Label Width="30" Content="{Binding OpenedPunchesReport.PunchAllCount, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="120" Content="Closed punches:"/>
+                    <Label Margin="40 0 0 0" Width="30" Content="{Binding ClosedPunchesReport.PunchACount, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Label Width="30" Content="{Binding ClosedPunchesReport.PunchBCount, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Label Width="40" Content="{Binding ClosedPunchesReport.PunchCCount, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Label Width="30" Content="{Binding ClosedPunchesReport.PunchAllCount, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+
+                <Button Content="Delete" Width="80" Margin="0 30 10 0" Command="{Binding DeletePunchCommand}" Visibility="{Binding DeleteVisibility, Mode=OneWay}" HorizontalAlignment="Right"/>
+            </StackPanel>
+        </Grid>
+
+
+        <ListView Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Auto" Name="listView" ItemsSource="{Binding AllPunches}" SelectedItem="{Binding SelectedOpenedPunch}">
+            <ListView.View>
+                <GridView AllowsColumnReorder="True">
+                    <GridView.Columns>
+                        <GridViewColumn Header="Tag" DisplayMemberBinding="{Binding Tag.Code}"/>
+                        <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}"/>
+                        <GridViewColumn Header="Priority" DisplayMemberBinding="{Binding PunchPriority.Priority}"/>
+                        <GridViewColumn Header="Date Opened" DisplayMemberBinding="{Binding DateOpened}"/>
+                        <GridViewColumn Header="Date Closed" DisplayMemberBinding="{Binding DateClosed}"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <EventSetter Event="MouseDoubleClick" Handler="ListViewItem_MouseDoubleClick"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+        <Label Grid.Row="2" Content="To Be Closed"/>
+
+        <ListView Grid.Row="3" ScrollViewer.VerticalScrollBarVisibility="Auto"  Name="listViewToClose" ItemsSource="{Binding ToClosePunches}" SelectedItem="{Binding SelectedToClosePunch}">
+            <ListView.View>
+                <GridView AllowsColumnReorder="True">
+                    <GridView.Columns>
+                        <GridViewColumn Header="Tag" DisplayMemberBinding="{Binding Tag.Code}"/>
+                        <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}"/>
+                        <GridViewColumn Header="Priority" DisplayMemberBinding="{Binding PunchPriority.Priority}"/>
+                        <GridViewColumn Header="Date Opened" DisplayMemberBinding="{Binding DateOpened}"/>
+                        <GridViewColumn Header="Date Closed" DisplayMemberBinding="{Binding DateClosed}"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <EventSetter Event="MouseDoubleClick" Handler="ListViewItem_MouseDoubleClick_1"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+
+        <Button Grid.Row="4" Height="30" Content="Close" Command="{Binding CloseCommand}"/>
+    </Grid>
+
+
+</Window>

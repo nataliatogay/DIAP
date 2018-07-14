@@ -1,0 +1,88 @@
+﻿<Window x:Class="brownshouse.Views.RequestClosingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:brownshouse.Views"
+        mc:Ignorable="d"
+        Background="#e5e5e5"
+        Title="DIAP - Close Request" Height="595" Width="800">
+
+    <Window.Resources>
+        <ResourceDictionary Source="Dictionary.xaml"/>
+    </Window.Resources>
+
+    <StackPanel Orientation="Vertical" Margin="15">
+        <StackPanel Orientation="Horizontal">
+            <Label Width="120" Content="No:"/>
+            <Label Content="{Binding RequestNo, Mode=OneWay}" FontWeight="Normal"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="120" Content="ITP:"/>
+            <Label Content="{Binding SelectedRequest.InspectionTestPlan.Subactivity.Title, Mode=OneWay}" FontWeight="Normal"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="120" Content="Unit:"/>
+            <Label Content="{Binding SelectedRequest.Unit.Title, Mode=OneWay}" FontWeight="Normal"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="120" Content="System:"/>
+            <Label Content="{Binding SelectedRequest.Subsyst.Syst.Title, Mode=OneWay}" Width="250" FontWeight="Normal"/>
+            <Label Width="120" Content="Subsystem:" Margin="10 0 0 0"/>
+            <Label Content="{Binding SelectedRequest.Subsyst.Title, Mode=OneWay}" FontWeight="Normal"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Width="120" Content="Date opened:"/>
+            <Label Content="{Binding SelectedRequest.DateOpen, Mode=OneWay}" Width="250" FontWeight="Normal"/>
+            <Label Width="120" Content="Inspection Date:" Margin="10 0 0 0"/>
+            <Label Content="{Binding SelectedRequest.DateToDo, Mode=OneWay}" FontWeight="Normal"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="120" Content="Raised By:"/>
+            <Label Content="{Binding SelectedRequest.RaisedByEmployee.LastName, Mode=OneWay}" FontWeight="Normal"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="120" Content="Subcontractor:"/>
+            <Label Width="250" Content="{Binding SelectedRequest.ResponsibleSubcontractor.LastName, Mode=OneWay}" FontWeight="Normal"/>
+            <Label Width="120" Content="Owner:" Margin="10 0 0 0"/>
+            <Label Content="{Binding SelectedRequest.ResponsibleOwner.LastName, Mode=OneWay}" FontWeight="Normal"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="120" Content="Contractor:"/>
+            <Label Width="250" Content="{Binding SelectedRequest.ResponsibleContractor.LastName, Mode=OneWay}" FontWeight="Normal"/>
+            <Label Width="120" Content="Third Party:" Margin="10 0 0 0"/>
+            <Label Content="{Binding SelectedRequest.ResponsibleThirdParty.LastName, Mode=OneWay}" FontWeight="Normal"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Visibility="{Binding ResultVisibility}">
+            <Label Width="120" Content="Result:"/>
+            <Label Content="{Binding SelectedRequest.Status.Result, Mode=OneWay}" FontWeight="Normal"/>
+        </StackPanel>
+        <StackPanel Visibility="{Binding ClosedVisibility}" Orientation="Vertical">
+            <Label Content="Tags:" Margin="0 15 0 0"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Margin="10 0 0 0" Content="Code" Width="130" FontWeight="Normal"/>
+                <Label Content="Punch" FontWeight ="Normal"/>
+            </StackPanel>
+            <ListBox HorizontalAlignment="Left" Width="180" Height="190" ItemsSource="{Binding TagsList}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Width="100" Text="{Binding tag.Code, Mode=OneWay}" IsReadOnly="True" Margin="5 0 40 0"/>
+                            <CheckBox IsChecked="{Binding IsRequiredPunch, Mode=TwoWay}" Visibility="{Binding ClosedVisibility}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal">
+            <Button Height="30" Content="Accepted" Command="{Binding AcceptedCommand}" Visibility="{Binding ClosedVisibility}" Margin="0 10 5 0"/>
+            <Button Height="30" Content="Rejected" Command="{Binding RejectedCommand}" Visibility="{Binding ClosedVisibility}" Margin="5 10 0 0"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

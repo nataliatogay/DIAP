@@ -1,0 +1,1106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="brownshouse.App" Collapsed="true">
+    <Position X="61" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAEAAAAAAAAAAAAAAACAAAI=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Domain.EntityFramework.BrownsContext" Collapsed="true">
+    <Position X="62.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgACAACAAAAABgQAAJBAABGAAIAEgAUABAAJQEIQA=</HashCode>
+      <FileName>Domain\EntityFramework\BrownsContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.AcceptanceResult" Collapsed="true">
+    <Position X="55.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAJAAAAAAAAAAAAAAAAQAAAAAAAAAUAAAEAAAAAA=</HashCode>
+      <FileName>Domain\Models\AcceptanceResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Activity" Collapsed="true">
+    <Position X="57.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgCAAAAAAAAAEAAAEAAAAAAAAAAAAAAAAAAAAAAIEA=</HashCode>
+      <FileName>Domain\Models\Activity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Discipline" Collapsed="true">
+    <Position X="59.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACACAAAAAAAEAAAAAgAAAAAAAAAEAAAAAAAAAEAAA=</HashCode>
+      <FileName>Domain\Models\Discipline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Employee" Collapsed="true">
+    <Position X="69.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAEAACSAAAAAAAAACAAAAAAAAAAACAAARAAAAAAg=</HashCode>
+      <FileName>Domain\Models\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Form" Collapsed="true">
+    <Position X="57.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAAAAAAABAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.InspectionRole" Collapsed="true">
+    <Position X="59.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAQBIAAAgAAAAAAAgAAAAAAABgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\InspectionRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.InspectionTestPlan" Collapsed="true">
+    <Position X="61" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAgQAgAAAAAAAAAAAAAAgAAAAEAAAAAAARAABEAAHA=</HashCode>
+      <FileName>Domain\Models\InspectionTestPlan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.MailSender" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAgAAAgIAAAAAAA=</HashCode>
+      <FileName>Domain\Models\MailSender.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Organization" Collapsed="true">
+    <Position X="55.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAACACAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\Organization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.OrganizationRole" Collapsed="true">
+    <Position X="57.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAABAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\OrganizationRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Position" Collapsed="true">
+    <Position X="59.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACACAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\Position.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.ProgramMail" Collapsed="true">
+    <Position X="61" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAEAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\ProgramMail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Project" Collapsed="true">
+    <Position X="64.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Domain\Models\Project.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Punch" Collapsed="true">
+    <Position X="66.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAABAAAgAAAAAAAAAgAEAAAAAABAAAAAAEAICAA=</HashCode>
+      <FileName>Domain\Models\Punch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.PunchReport" Collapsed="true">
+    <Position X="55.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Domain\Models\Punch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.PunchPriority" Collapsed="true">
+    <Position X="69.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\PunchPriority.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Request" Collapsed="true">
+    <Position X="57.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAADAEAFCAAkAEIBIEAgGEAEggAAABAAIAAABAAgAAA=</HashCode>
+      <FileName>Domain\Models\Request.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Repository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAigVAAVgQkAB5CQAYAlEAJSVIAYUwCIJBgQWKCRQ=</HashCode>
+      <FileName>Domain\Models\Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Subactivity" Collapsed="true">
+    <Position X="57.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAEAAAAAAgAAAAAAAAAAAAEAAEAA=</HashCode>
+      <FileName>Domain\Models\Subactivity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Subsyst" Collapsed="true">
+    <Position X="59.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAEAAAAAkAAAAAAAAgEAAAAAAABAAAAA=</HashCode>
+      <FileName>Domain\Models\Subsyst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Syst" Collapsed="true">
+    <Position X="61" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAEAAAAAoAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\Syst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Tag" Collapsed="true">
+    <Position X="62.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAACAIEAEAAIgAgAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\Tag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.TagsRequest" Collapsed="true">
+    <Position X="64.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAACAAIAAA=</HashCode>
+      <FileName>Domain\Models\TagsRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Unit" Collapsed="true">
+    <Position X="66.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAAAgAAAAAAAAAEAAAAAAABAAAAA=</HashCode>
+      <FileName>Domain\Models\Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.User" Collapsed="true">
+    <Position X="68" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAABAAAIAAAAgAwAAAAAACAAAAAAAAAAAAAAAIAI=</HashCode>
+      <FileName>Domain\Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Domain.Models.Work" Collapsed="true">
+    <Position X="69.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAIAAEAAAgAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Domain\Models\Work.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Migrations.creation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="55.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201805230904302_creation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.set_null_acceptances" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="69.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201805230946597_set_null_acceptances.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.rfiIsRequired_adding" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="68" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201805241104500_rfiIsRequired_adding.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.dateClosed_null" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="57.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201805270943359_dateClosed_null.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.add_employee" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="61" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201805290707582_add_employee.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.add_idDiscipline_to_tags" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201805300629157_add_idDiscipline_to_tags.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.add_users_to_requests" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="68" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201805310823027_add_users_to_requests.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.edit_users_to_requests" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="68" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201805310855519_edit_users_to_requests.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.edit_raisedby_request" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201805310915311_edit_raisedby_request.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.add_email_employee" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201805310920487_add_email_employee.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.edit_subactivity_number" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201807051125143_edit_subactivity_number.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.add_programMail" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201807051313104_add_programMail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.edit_programmail" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201807051833361_edit_programmail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.add_mails" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201807051923456_add_mails.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.edit_mails" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="61" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201807051926543_edit_mails.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Migrations.Configuration" Collapsed="true">
+    <Position X="68" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Migrations\Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Properties.Resources" Collapsed="true">
+    <Position X="66.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.Properties.Settings" Collapsed="true">
+    <Position X="55.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="brownshouse.ViewModels.AddNewActivityViewModel" Collapsed="true">
+    <Position X="23" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIIAQAhAAEAAQFAAAQBEAAEAAAABIgCAACBAAAAA=</HashCode>
+      <FileName>ViewModels\AddNewActivityViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.AddNewDisciplineViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="57.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAQAAAAAAAEAAAAAAAAIAiAACAAAAAA=</HashCode>
+      <FileName>ViewModels\AddNewDisciplineViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.AddNewEmployeeViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="61" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAgAAAAAAAEAAQAAAAAKAKACCACAAAA=</HashCode>
+      <FileName>ViewModels\AddNewEmployeeViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.AddNewFormViewModel" Collapsed="true">
+    <Position X="29.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAABAAQAEAAEAAAEAIACBACAAAAAA=</HashCode>
+      <FileName>ViewModels\AddNewFormViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.AddNewInspectionRoleViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAIAAAAAAAAoAAAAAEAAAAAAAAIACAACAAAAAA=</HashCode>
+      <FileName>ViewModels\AddNewInspectionRoleViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.AddNewITPViewModel" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAIIAQAkAAEARQFAAAQBGAAEIEAABIAGAACBEAAAA=</HashCode>
+      <FileName>ViewModels\AddNewITPViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.AddNewPunchFromRFIViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="55.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAIAIBAIAAAAgAAAAAAAEAAAAAABAoACASCAAAAAA=</HashCode>
+      <FileName>ViewModels\AddNewPunchFromRFIViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.AddNewPunchViewModel" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAIAIJAoBBCAAAFQAAABEAABABAAAogCAAKBAAACA=</HashCode>
+      <FileName>ViewModels\AddNewPunchViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.AddNewRequestViewModel" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQAIIAAIAMBxCARQVQAQUJEAAHIFEABqgOAAKAEKACA=</HashCode>
+      <FileName>ViewModels\AddNewRequestViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.AddNewSubactivityViewModel" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAgIAAQAgAAEARQFBAAQJEIAEAAABBIACAACBEAAAA=</HashCode>
+      <FileName>ViewModels\AddNewSubactivityViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.AddNewSubsystemViewModel" Collapsed="true">
+    <Position X="14" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAICAIAABAAAABEAAACBEAAAAAAAAJgCAACAAAAAA=</HashCode>
+      <FileName>ViewModels\AddNewSubsystemViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.AddNewSystemViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAABAEAAAEAAAAAQAAIACAACAAAAAA=</HashCode>
+      <FileName>ViewModels\AddNewSystemViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.AddNewUnitViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="69.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAMAAAAAAAEIACAACAAAAAA=</HashCode>
+      <FileName>ViewModels\AddNewUnitViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.AddNewWorkViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="57.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAYAAAAgAAAAAAAAAAAAEAAAAAAAAIACAACAAAAAA=</HashCode>
+      <FileName>ViewModels\AddNewWorkViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.ChangePasswordViewModel" Collapsed="true">
+    <Position X="25.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAIAAAAIAAAAAAUBAQABEAAEAAAAAIACAACAAAAAA=</HashCode>
+      <FileName>ViewModels\ChangePasswordViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.ContractorMainViewModel" Collapsed="true">
+    <Position X="27.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgAAoAQEEICAAgAAAAIAAAEAAAABEBAEBCASBAYAAAA=</HashCode>
+      <FileName>ViewModels\ContractorMainViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.ForgotPasswordViewModel" Collapsed="true">
+    <Position X="32" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIgABAgIAAAgAAAAIAAEAAAAAAAAIACEACIAAAAA=</HashCode>
+      <FileName>ViewModels\ForgotPasswordViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.LoginViewModel" Collapsed="true">
+    <Position X="34.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAIAAAAIAAAAAAUAAAABMAAAABAAAIACAQCAIAEAA=</HashCode>
+      <FileName>ViewModels\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.MainViewModel" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AogAoCCAEJECIgARARIAAAFAAIEDERABBiAYAAZIAAg=</HashCode>
+      <FileName>ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.MyMultiConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="68" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MyMultiConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.NewAcceptanceResultViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="69.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAIEAAAAAAAAIACAACAAAAAA=</HashCode>
+      <FileName>ViewModels\NewAcceptanceResultViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.NotifyPropertyChangedObject" Collapsed="true">
+    <Position X="17.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\NotifyPropertyChangedObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.ProgramMailViewModel" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAIACAAEAAAAgA0BAYABEABAAEBEAKACAACAAABgA=</HashCode>
+      <FileName>ViewModels\ProgramMailViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.PunchClosingViewModel" Collapsed="true">
+    <Position X="16.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAAICBYw5BAGAEAFCEIAVEBABJFBAAEgCAIBBABAAA=</HashCode>
+      <FileName>ViewModels\PunchClosingViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.RequestClosingViewModel" Collapsed="true">
+    <Position X="18.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICAAIAAAAIACQAAIAgAAAAEAAAAAQAAgACACAAAgAAA=</HashCode>
+      <FileName>ViewModels\RequestClosingViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.RequestsViewModel" Collapsed="true">
+    <Position X="20.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAIgQAAIAAAAAAAARAAAEAAAAAAAAEACACBAAAAAI=</HashCode>
+      <FileName>ViewModels\RequestsViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="brownshouse.ViewModels.RelayCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAEAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewAcceptanceResultWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="69.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\AddNewAcceptanceResultWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewActivityWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="55.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAEAABAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\AddNewActivityWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewDisciplineWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\AddNewDisciplineWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewEmployeeWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\AddNewEmployeeWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewFormWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\AddNewFormWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewInspectionRoleWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="68" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\AddNewInspectionRoleWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewITPWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="69.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAABAAAQAAAAAAAACAAgI=</HashCode>
+      <FileName>Views\AddNewITPWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewPunchFromRFIWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="57.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\AddNewPunchFromRFIWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewPunchWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAABAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\AddNewPunchWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewRequestWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="61" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAABAAAAAAQAAAAAAAACAAgI=</HashCode>
+      <FileName>Views\AddNewRequestWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewSubactivityWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAABAAAQAAAAAAAACAAgI=</HashCode>
+      <FileName>Views\AddNewSubactivityWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewSubsystemWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\AddNewSubsystemWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewSystemWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="68" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\AddNewSystemWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewUnitWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="55.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\AddNewUnitWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.AddNewWorkWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\AddNewWorkWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.ChangePasswordWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAQAAAAAABAAQAAAAAAAACAQAI=</HashCode>
+      <FileName>Views\ChangePasswordWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.ContractorMainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="69.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAEQAAAAAAAAAAAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\ContractorMainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.ForgotPasswordWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="55.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\ForgotPasswordWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.LoginWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAQAABAAAAEAAAAAAAAAACAAAo=</HashCode>
+      <FileName>Views\LoginWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.ProgramMailWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAQAAAAAAAAAQAAAAAAAACAQAI=</HashCode>
+      <FileName>Views\ProgramMailWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.PunchClosingWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="68" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgQBAIAABAAAQAAAAAAAACAAgI=</HashCode>
+      <FileName>Views\PunchClosingWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.RequestClosingWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\RequestClosingWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="brownshouse.Views.Requests" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="61" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEQAAAAAAAAAQAAAAAAAACAAAI=</HashCode>
+      <FileName>Views\Requests.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="brownshouse.Interfaces.IAddNewActivityView" Collapsed="true">
+    <Position X="19.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewActivityView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewActivityViewModel" Collapsed="true">
+    <Position X="55.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAgAAAAAQFAAAQAEAAEAAAAAIAAAAABAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewActivityViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewDisciplineView" Collapsed="true">
+    <Position X="28.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewDisciplineView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewDisciplineViewModel" Collapsed="true">
+    <Position X="57.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAEAAAAAAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewDisciplineViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewEmployeeView" Collapsed="true">
+    <Position X="37.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewEmployeeView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewEmployeeViewModel" Collapsed="true">
+    <Position X="59.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAEAAQAAAAAKAIACAACAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewEmployeeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewFormView" Collapsed="true">
+    <Position X="46.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewFormView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewFormViewModel" Collapsed="true">
+    <Position X="61" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAEAAEAAAAAIAABAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewFormViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewInspectionRoleView" Collapsed="true">
+    <Position X="53.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewInspectionRoleView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewInspectionRoleViewModel" Collapsed="true">
+    <Position X="62.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAoAAAAAEAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewInspectionRoleViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewITPView" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewITPView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewITPViewModel" Collapsed="true">
+    <Position X="64.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAQAkAAAAQQFAAAQAGAAEIAAAAIAAAAABEAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewITPViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewPunchFromRFIView" Collapsed="true">
+    <Position X="15" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewPunchFromRFIView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewPunchFromRFIViewModel" Collapsed="true">
+    <Position X="66.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewPunchFromRFIViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewPunchView" Collapsed="true">
+    <Position X="24" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewPunchView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewPunchViewModel" Collapsed="true">
+    <Position X="68" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAIIAoBBAAAAFAAAAAEAABAAAAAogAAAABAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewPunchViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewRequestView" Collapsed="true">
+    <Position X="33" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewRequestView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewRequestViewModel" Collapsed="true">
+    <Position X="69.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAIAAAIAMBhAAQQFAAAQIEAAFAAAAAogAAAAAEAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewRequestViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewSubactivityView" Collapsed="true">
+    <Position X="39.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewSubactivityView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewSubactivityViewModel" Collapsed="true">
+    <Position X="55.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAgAAAAQQFAAAQAEAAEAAABAIAAAAABEAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewSubactivityViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewSubsystemView" Collapsed="true">
+    <Position X="48.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewSubsystemView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewSubsystemViewModel" Collapsed="true">
+    <Position X="57.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAIAAAAAAABEAAAAAEAAAAAAAAIgAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewSubsystemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewSystemView" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewSystemView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewSystemViewModel" Collapsed="true">
+    <Position X="59.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAEAAAEAAAAAQAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewSystemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewUnitView" Collapsed="true">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewUnitView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewUnitViewModel" Collapsed="true">
+    <Position X="61" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAMAAAAAAAEIAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewUnitViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewWorkView" Collapsed="true">
+    <Position X="21.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewWorkView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IAddNewWorkViewModel" Collapsed="true">
+    <Position X="62.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAQAAAAgAAAAAAAAAAAAEAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAddNewWorkViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IChangePasswordView" Collapsed="true">
+    <Position X="30.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IChangePasswordView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IChangePasswordViewModel" Collapsed="true">
+    <Position X="64.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAIAAAAAAABAQAAEAAEAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IChangePasswordViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IContractorMainViewModel" Collapsed="true">
+    <Position X="66.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAIAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IContractorMainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IForgotPasswordView" Collapsed="true">
+    <Position X="42" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IForgotPasswordView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IForgotPasswordViewModel" Collapsed="true">
+    <Position X="68" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IForgotPasswordViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.ILoginView" Collapsed="true">
+    <Position X="51" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAEAAAAABAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILoginView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.ILoginViewModel" Collapsed="true">
+    <Position X="69.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAIAAAAAAAAAAAAEAAAABAAAIAAAQAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILoginViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IMainViewModel" Collapsed="true">
+    <Position X="55.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgAAAAAAIAAIAAQAQAAAAFAAAABABABAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.INewAcceptanceResultView" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\INewAcceptanceResultView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.INewAcceptanceResultViewModel" Collapsed="true">
+    <Position X="57.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIEAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\INewAcceptanceResultViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IProgramMailView" Collapsed="true">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IProgramMailView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IProgramMailViewModel" Collapsed="true">
+    <Position X="59.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAgAkBAQAAEAAAAEAEAIAAAAAAAABgA=</HashCode>
+      <FileName>Interfaces\IProgramMailViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IPunchClosingView" Collapsed="true">
+    <Position X="26.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPunchClosingView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IPunchClosingViewModel" Collapsed="true">
+    <Position X="61" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACBQwAAAEAAAAAAAAAEAABIAAAAEACAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPunchClosingViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IRequestClosingView" Collapsed="true">
+    <Position X="35.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IRequestClosingView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IRequestClosingViewModel" Collapsed="true">
+    <Position X="62.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Interfaces\IRequestClosingViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IRequestView" Collapsed="true">
+    <Position X="44.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IRequestView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IRequestViewModel" Collapsed="true">
+    <Position X="64.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAACAAAAAAI=</HashCode>
+      <FileName>Interfaces\IRequestViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IRepository" Collapsed="true">
+    <Position X="66.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACgVAAUgQkAB5CQAYAlEAJCFIAYEwCIJBAQWKCRQ=</HashCode>
+      <FileName>Interfaces\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.ISender" Collapsed="true">
+    <Position X="68" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISender.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IView" Collapsed="true">
+    <Position X="27.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAACAAAI=</HashCode>
+      <FileName>Interfaces\IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IMainView" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="brownshouse.Interfaces.IContractorMainView" Collapsed="true">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

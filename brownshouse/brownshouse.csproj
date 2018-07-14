@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{141D964B-3BB2-4537-9D90-81FD47436CE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>brownshouse</RootNamespace>
+    <AssemblyName>brownshouse</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=4.8.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.8.1\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="BCrypt.Net, Version=0.1.4141.31969, Culture=neutral, PublicKeyToken=f3bc8f8c31beeb49, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net.0.1.0\lib\net35\BCrypt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.8.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.8.1\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.5.2.1, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.2.1\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.1.2\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=2.4.0.1044, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.2.4.0.1044\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="ShowMeTheXAML, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ShowMeTheXAML.1.0.10\lib\net45\ShowMeTheXAML.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net46\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.3.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.4.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Domain\Models\DIAPLogic.cs" />
+    <Compile Include="Domain\Models\Employee.cs" />
+    <Compile Include="Domain\Models\MailSender.cs" />
+    <Compile Include="Domain\Models\ProgramMail.cs" />
+    <Compile Include="Domain\Models\Repository.cs" />
+    <Compile Include="Interfaces\IAddNewEmployeeView.cs" />
+    <Compile Include="Interfaces\IAddNewEmployeeViewModel.cs" />
+    <Compile Include="Interfaces\IAddNewPunchFromRFIView.cs" />
+    <Compile Include="Interfaces\IAddNewPunchFromRFIViewModel.cs" />
+    <Compile Include="Interfaces\IAddNewPunchView.cs" />
+    <Compile Include="Interfaces\IAddNewPunchViewModel.cs" />
+    <Compile Include="Interfaces\IChangePasswordView.cs" />
+    <Compile Include="Interfaces\IChangePasswordViewModel.cs" />
+    <Compile Include="Interfaces\IContractorMainViewModel.cs" />
+    <Compile Include="Interfaces\IBusinessLogic.cs" />
+    <Compile Include="Interfaces\IForgotPasswordView.cs" />
+    <Compile Include="Interfaces\IForgotPasswordViewModel.cs" />
+    <Compile Include="Interfaces\ILoginView.cs" />
+    <Compile Include="Interfaces\ILoginViewModel.cs" />
+    <Compile Include="Interfaces\IProgramMailView.cs" />
+    <Compile Include="Interfaces\IProgramMailViewModel.cs" />
+    <Compile Include="Interfaces\IPunchClosingView.cs" />
+    <Compile Include="Interfaces\IPunchClosingViewModel.cs" />
+    <Compile Include="Interfaces\IRequestClosingView.cs" />
+    <Compile Include="Interfaces\IRequestClosingViewModel.cs" />
+    <Compile Include="Interfaces\IRequestView.cs" />
+    <Compile Include="Interfaces\IRequestViewModel.cs" />
+    <Compile Include="Interfaces\ISender.cs" />
+    <Compile Include="Migrations\201805230904302_creation.cs" />
+    <Compile Include="Migrations\201805230904302_creation.Designer.cs">
+      <DependentUpon>201805230904302_creation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805230946597_set_null_acceptances.cs" />
+    <Compile Include="Migrations\201805230946597_set_null_acceptances.Designer.cs">
+      <DependentUpon>201805230946597_set_null_acceptances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805241104500_rfiIsRequired_adding.cs" />
+    <Compile Include="Migrations\201805241104500_rfiIsRequired_adding.Designer.cs">
+      <DependentUpon>201805241104500_rfiIsRequired_adding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805270943359_dateClosed_null.cs" />
+    <Compile Include="Migrations\201805270943359_dateClosed_null.Designer.cs">
+      <DependentUpon>201805270943359_dateClosed_null.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805290707582_add_employee.cs" />
+    <Compile Include="Migrations\201805290707582_add_employee.Designer.cs">
+      <DependentUpon>201805290707582_add_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805300629157_add_idDiscipline_to_tags.cs" />
+    <Compile Include="Migrations\201805300629157_add_idDiscipline_to_tags.Designer.cs">
+      <DependentUpon>201805300629157_add_idDiscipline_to_tags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805310823027_add_users_to_requests.cs" />
+    <Compile Include="Migrations\201805310823027_add_users_to_requests.Designer.cs">
+      <DependentUpon>201805310823027_add_users_to_requests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805310855519_edit_users_to_requests.cs" />
+    <Compile Include="Migrations\201805310855519_edit_users_to_requests.Designer.cs">
+      <DependentUpon>201805310855519_edit_users_to_requests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805310915311_edit_raisedby_request.cs" />
+    <Compile Include="Migrations\201805310915311_edit_raisedby_request.Designer.cs">
+      <DependentUpon>201805310915311_edit_raisedby_request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805310920487_add_email_employee.cs" />
+    <Compile Include="Migrations\201805310920487_add_email_employee.Designer.cs">
+      <DependentUpon>201805310920487_add_email_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807051125143_edit_subactivity_number.cs" />
+    <Compile Include="Migrations\201807051125143_edit_subactivity_number.Designer.cs">
+      <DependentUpon>201807051125143_edit_subactivity_number.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807051313104_add_programMail.cs" />
+    <Compile Include="Migrations\201807051313104_add_programMail.Designer.cs">
+      <DependentUpon>201807051313104_add_programMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807051833361_edit_programmail.cs" />
+    <Compile Include="Migrations\201807051833361_edit_programmail.Designer.cs">
+      <DependentUpon>201807051833361_edit_programmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807051923456_add_mails.cs" />
+    <Compile Include="Migrations\201807051923456_add_mails.Designer.cs">
+      <DependentUpon>201807051923456_add_mails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807051926543_edit_mails.cs" />
+    <Compile Include="Migrations\201807051926543_edit_mails.Designer.cs">
+      <DependentUpon>201807051926543_edit_mails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807130843500_edit_RfiResponsibleUsers.cs" />
+    <Compile Include="Migrations\201807130843500_edit_RfiResponsibleUsers.Designer.cs">
+      <DependentUpon>201807130843500_edit_RfiResponsibleUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807130906008_edit_RfiResponsibleUsers1.cs" />
+    <Compile Include="Migrations\201807130906008_edit_RfiResponsibleUsers1.Designer.cs">
+      <DependentUpon>201807130906008_edit_RfiResponsibleUsers1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ViewModels\AddNewActivityViewModel.cs" />
+    <Compile Include="ViewModels\AddNewDisciplineViewModel.cs" />
+    <Compile Include="ViewModels\AddNewEmployeeViewModel.cs" />
+    <Compile Include="ViewModels\AddNewFormViewModel.cs" />
+    <Compile Include="ViewModels\AddNewInspectionRoleViewModel.cs" />
+    <Compile Include="ViewModels\AddNewITPViewModel.cs" />
+    <Compile Include="ViewModels\AddNewPunchFromRFIViewModel.cs" />
+    <Compile Include="ViewModels\AddNewPunchViewModel.cs" />
+    <Compile Include="ViewModels\AddNewRequestViewModel.cs" />
+    <Compile Include="ViewModels\AddNewSubactivityViewModel.cs" />
+    <Compile Include="ViewModels\AddNewSubsystemViewModel.cs" />
+    <Compile Include="ViewModels\AddNewSystemViewModel.cs" />
+    <Compile Include="ViewModels\AddNewUnitViewModel.cs" />
+    <Compile Include="ViewModels\AddNewWorkViewModel.cs" />
+    <Compile Include="ViewModels\ChangePasswordViewModel.cs" />
+    <Compile Include="ViewModels\ContractorMainViewModel.cs" />
+    <Compile Include="ViewModels\ForgotPasswordViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\NewAcceptanceResultViewModel.cs" />
+    <Compile Include="ViewModels\NotifyPropertyChangedObject.cs" />
+    <Compile Include="ViewModels\ProgramMailViewModel.cs" />
+    <Compile Include="ViewModels\PunchClosingViewModel.cs" />
+    <Compile Include="ViewModels\RelayCommand.cs" />
+    <Compile Include="ViewModels\RequestClosingViewModel.cs" />
+    <Compile Include="ViewModels\RequestsViewModel.cs" />
+    <Compile Include="Views\AddNewAcceptanceResultWindow.xaml.cs">
+      <DependentUpon>AddNewAcceptanceResultWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNewActivityWindow.xaml.cs">
+      <DependentUpon>AddNewActivityWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNewDisciplineWindow.xaml.cs">
+      <DependentUpon>AddNewDisciplineWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNewEmployeeWindow.xaml.cs">
+      <DependentUpon>AddNewEmployeeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNewFormWindow.xaml.cs">
+      <DependentUpon>AddNewFormWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNewInspectionRoleWindow.xaml.cs">
+      <DependentUpon>AddNewInspectionRoleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNewITPWindow.xaml.cs">
+      <DependentUpon>AddNewITPWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNewPunchFromRFIWindow.xaml.cs">
+      <DependentUpon>AddNewPunchFromRFIWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNewPunchWindow.xaml.cs">
+      <DependentUpon>AddNewPunchWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNewRequestWindow.xaml.cs">
+      <DependentUpon>AddNewRequestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNewSubactivityWindow.xaml.cs">
+      <DependentUpon>AddNewSubactivityWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNewSubsystemWindow.xaml.cs">
+      <DependentUpon>AddNewSubsystemWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNewSystemWindow.xaml.cs">
+      <DependentUpon>AddNewSystemWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNewUnitWindow.xaml.cs">
+      <DependentUpon>AddNewUnitWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNewWorkWindow.xaml.cs">
+      <DependentUpon>AddNewWorkWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChangePasswordWindow.xaml.cs">
+      <DependentUpon>ChangePasswordWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ContractorMainWindow.xaml.cs">
+      <DependentUpon>ContractorMainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ForgotPasswordWindow.xaml.cs">
+      <DependentUpon>ForgotPasswordWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramMailWindow.xaml.cs">
+      <DependentUpon>ProgramMailWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PunchClosingWindow.xaml.cs">
+      <DependentUpon>PunchClosingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RequestClosingWindow.xaml.cs">
+      <DependentUpon>RequestClosingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Requests.xaml.cs">
+      <DependentUpon>Requests.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\EntityFramework\BrownsContext.cs" />
+    <Compile Include="Domain\Models\AcceptanceResult.cs" />
+    <Compile Include="Domain\Models\Activity.cs" />
+    <Compile Include="Domain\Models\Discipline.cs" />
+    <Compile Include="Domain\Models\Form.cs" />
+    <Compile Include="Domain\Models\InspectionRole.cs" />
+    <Compile Include="Domain\Models\InspectionTestPlan.cs" />
+    <Compile Include="Domain\Models\Organization.cs" />
+    <Compile Include="Domain\Models\OrganizationRole.cs" />
+    <Compile Include="Domain\Models\Position.cs" />
+    <Compile Include="Domain\Models\Project.cs" />
+    <Compile Include="Domain\Models\Punch.cs" />
+    <Compile Include="Domain\Models\PunchPriority.cs" />
+    <Compile Include="Domain\Models\Request.cs" />
+    <Compile Include="Domain\Models\Subactivity.cs" />
+    <Compile Include="Domain\Models\Subsyst.cs" />
+    <Compile Include="Domain\Models\Syst.cs" />
+    <Compile Include="Domain\Models\Tag.cs" />
+    <Compile Include="Domain\Models\TagsRequest.cs" />
+    <Compile Include="Domain\Models\Unit.cs" />
+    <Compile Include="Domain\Models\User.cs" />
+    <Compile Include="Domain\Models\Work.cs" />
+    <Compile Include="Interfaces\IAddNewActivityView.cs" />
+    <Compile Include="Interfaces\IAddNewActivityViewModel.cs" />
+    <Compile Include="Interfaces\IAddNewDisciplineView.cs" />
+    <Compile Include="Interfaces\IAddNewDisciplineViewModel.cs" />
+    <Compile Include="Interfaces\IAddNewFormView.cs" />
+    <Compile Include="Interfaces\IAddNewFormViewModel.cs" />
+    <Compile Include="Interfaces\IAddNewInspectionRoleView.cs" />
+    <Compile Include="Interfaces\IAddNewInspectionRoleViewModel.cs" />
+    <Compile Include="Interfaces\IAddNewITPView.cs" />
+    <Compile Include="Interfaces\IAddNewITPViewModel.cs" />
+    <Compile Include="Interfaces\IAddNewRequestView.cs" />
+    <Compile Include="Interfaces\IAddNewRequestViewModel.cs" />
+    <Compile Include="Interfaces\IAddNewSubactivityView.cs" />
+    <Compile Include="Interfaces\IAddNewSubactivityViewModel.cs" />
+    <Compile Include="Interfaces\IAddNewSubsystemView.cs" />
+    <Compile Include="Interfaces\IAddNewSubsystemViewModel.cs" />
+    <Compile Include="Interfaces\IAddNewSystemView.cs" />
+    <Compile Include="Interfaces\IAddNewSystemViewModel.cs" />
+    <Compile Include="Interfaces\IAddNewUnitView.cs" />
+    <Compile Include="Interfaces\IAddNewUnitViewModel.cs" />
+    <Compile Include="Interfaces\IAddNewWorkView.cs" />
+    <Compile Include="Interfaces\IAddNewWorkViewModel.cs" />
+    <Compile Include="Interfaces\IMainViewModel.cs" />
+    <Compile Include="Interfaces\INewAcceptanceResultView.cs" />
+    <Compile Include="Interfaces\INewAcceptanceResultViewModel.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\IView.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Resources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewAcceptanceResultWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewActivityWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewDisciplineWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewEmployeeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewFormWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewInspectionRoleWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewITPWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewPunchFromRFIWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewPunchWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewRequestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewSubactivityWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewSubsystemWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewSystemWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewUnitWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddNewWorkWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ChangePasswordWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ContractorMainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Dictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ForgotPasswordWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProgramMailWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PunchClosingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RequestClosingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Requests.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Migrations\201805230904302_creation.resx">
+      <DependentUpon>201805230904302_creation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805230946597_set_null_acceptances.resx">
+      <DependentUpon>201805230946597_set_null_acceptances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805241104500_rfiIsRequired_adding.resx">
+      <DependentUpon>201805241104500_rfiIsRequired_adding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805270943359_dateClosed_null.resx">
+      <DependentUpon>201805270943359_dateClosed_null.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805290707582_add_employee.resx">
+      <DependentUpon>201805290707582_add_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805300629157_add_idDiscipline_to_tags.resx">
+      <DependentUpon>201805300629157_add_idDiscipline_to_tags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805310823027_add_users_to_requests.resx">
+      <DependentUpon>201805310823027_add_users_to_requests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805310855519_edit_users_to_requests.resx">
+      <DependentUpon>201805310855519_edit_users_to_requests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805310915311_edit_raisedby_request.resx">
+      <DependentUpon>201805310915311_edit_raisedby_request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805310920487_add_email_employee.resx">
+      <DependentUpon>201805310920487_add_email_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807051125143_edit_subactivity_number.resx">
+      <DependentUpon>201807051125143_edit_subactivity_number.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807051313104_add_programMail.resx">
+      <DependentUpon>201807051313104_add_programMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807051833361_edit_programmail.resx">
+      <DependentUpon>201807051833361_edit_programmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807051923456_add_mails.resx">
+      <DependentUpon>201807051923456_add_mails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807051926543_edit_mails.resx">
+      <DependentUpon>201807051926543_edit_mails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807130843500_edit_RfiResponsibleUsers.resx">
+      <DependentUpon>201807130843500_edit_RfiResponsibleUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807130906008_edit_RfiResponsibleUsers1.resx">
+      <DependentUpon>201807130906008_edit_RfiResponsibleUsers1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\double-down.png" />
+    <Resource Include="images\double-up.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\ShowMeTheXAML.MSBuild.1.0.10\build\net45\ShowMeTheXAML.MSBuild.targets" Condition="Exists('..\packages\ShowMeTheXAML.MSBuild.1.0.10\build\net45\ShowMeTheXAML.MSBuild.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\ShowMeTheXAML.MSBuild.1.0.10\build\net45\ShowMeTheXAML.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ShowMeTheXAML.MSBuild.1.0.10\build\net45\ShowMeTheXAML.MSBuild.targets'))" />
+  </Target>
+</Project>
